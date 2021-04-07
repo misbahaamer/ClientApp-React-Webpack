@@ -1,0 +1,19 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": [
+        "css-modules-transform",
+        "syntax-dynamic-import",
+        "syntax-async-functions",
+        "transform-es2015-arrow-functions",
+        "babel-plugin-transform-es2015-template-literals",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-spread",
+        "@babel/plugin-transform-destructuring",
+        "@babel/plugin-transform-computed-properties",
+        "@babel/plugin-transform-parameters",
+        "@babel/plugin-transform-classes",
+        "@babel/plugin-transform-react-constant-elements",
+        "@babel/plugin-proposal-function-bind"
+      ]
+}
