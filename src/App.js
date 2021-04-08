@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "./components/login";
 import SignUp from "./components/signup";
 import Myaccount from "./components/myaccount";
-import TopNav from "./components/navigation/topNav";
+import Navbar from "./components/navigation/Navbar";
 import SideNav from "./components/navigation/sideNav";
 
 class App extends Component {
@@ -14,8 +14,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <TopNav />
-          <SideNav />
+          <Navbar />
         </div>
       </Router>
     );
