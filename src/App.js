@@ -1,30 +1,21 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "./components/login";
 import SignUp from "./components/signup";
 import Myaccount from "./components/myaccount";
-import TopNavbar from "./components/naigation/topnav";
-import SideNavbar from "./components/naigation/sideNav";
+import TopNav from "./components/navigation/topNav";
+import SideNav from "./components/navigation/sideNav";
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <TopNavbar />
-          <SideNavbar />
-
-          <div className="auth-wrapper">
-            <div className="auth-inner">
-              <Switch>
-                <Route path="/sign-in" component={Login} />
-                <Route path="/sign-up" component={SignUp} />
-                <Route path="/myAccount" component={Myaccount} />
-              </Switch>
-            </div>
-          </div>
+        <div className="App">
+          <TopNav />
+          <SideNav />
         </div>
       </Router>
     );
